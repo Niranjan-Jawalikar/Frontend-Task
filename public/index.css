@@ -1,0 +1,326 @@
+html,body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+}
+::selection{
+    color: white;
+    background-color: #ea4c89;
+}
+.notification{
+    position: relative;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 12px 0;
+    font-size: .9em;
+
+}
+.notification > p{
+  margin:0 60px ;
+}
+.notification > p >span{
+    color: magenta;
+}
+.cross-icon{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: white;
+}
+.cross-icon:hover{
+    background-color: white;
+    color: black;
+}
+.cross-icon:active{
+    color: white;
+}
+nav{
+    margin-bottom: 20px;
+}
+.fa-search{
+    color: lightgray;
+}
+.fa-box{
+    color: gold;
+}
+.sign-up{
+    background: #ea4c89;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+    width: 100px;
+}
+.sign-up > a{
+    color: white !important;
+}
+.trial-description p , .image-header-description p{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+@media (min-width:992px){
+    .main-content{
+       padding:0 100px;
+    }
+    .more-info-images div{
+        height: 300px;
+    }
+    .more-info-overlay span strong,.overlay-buttons{
+     height: fit-content !important;
+     position: absolute !important;
+    }
+    .more-info-overlay span strong{
+        top: 0 !important;
+        margin-left: 10px !important;
+    }
+    .overlay-buttons{
+        top: -10px;
+    }
+    .overlay-buttons button{
+        margin: 0 5px;
+    }
+} 
+@media(max-width:991px){
+    .trial-button{
+        width: 100%;
+    }
+    .trial-description{
+        margin-bottom: 10px;
+    }
+    .main-content{
+        margin: 0 10px;
+    }
+    .more-info-description{
+        height: 20px !important;
+    }
+    .more-info .more-info-image{
+        height: 350px !important;
+    }
+    .floating-buttons{
+        display: none;
+    }
+  
+}
+@media(min-width:769px) and (max-width:992px){
+    .more-info-overlay span{
+        margin-right: 30px !important;
+    }
+    .overlay-buttons{
+       margin-left: 180px !important;
+    }
+}
+@media(max-width:768px){
+    .more-info-overlay span{
+        margin-right: 30px !important;
+    }
+    .overlay-buttons{
+       margin-left: 235px !important;
+    }
+  
+
+}
+@media(max-width:540px){
+    #image-carousel{
+        width: 400px !important;
+        margin: 0;
+    }
+    #image-carousel img{
+        height: 300px !important;
+    }
+}
+.trial{
+    background-color: #f8f8f8;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.hotjar-button,.hire-message button{
+    padding: 10px 20px;
+    background-color: #ea4c89;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+.trial-button{
+    background-color: #fff;
+    border-radius: 2px;
+    border:none;
+    padding: 10px 20px;
+    border: 1px solid #e4cccc;
+    text-align: center;
+}
+.trial-button:hover{
+    background-color: #e9e8e8cb;
+} 
+.image-header-profile{
+    width: 45px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 0;
+}
+.header-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-buttons button{
+    width: 100px;
+    height: 50px;
+    padding: 5px 10px;
+    background-color: #eceaea;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.header-buttons button:hover{
+    background-color: #e0d9d9;
+}
+.button-set1>button ,.button-set2>button{
+    width: 50px;
+    padding: 2px 5px;
+}
+.image-text-container,.trial-text-container{
+    display: flex;
+    flex-direction: column;
+}
+#image-carousel{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+#image-carousel img{
+    height: 400px;
+    object-fit:cover;
+    object-position: center;
+}
+.image-header{
+    margin-bottom: 20px;
+}
+.image-info p,.image-info ul li{
+    font-size: 22px;
+}
+.image-info p:last-of-type a{
+    color: #ea4c89;
+    text-decoration: none;
+    font-weight: bold;
+}
+.image-info{
+    margin-bottom: 40px;
+}
+.hire-message p{
+  text-align: center;
+  font-size: 22px;
+}
+.hire-message button{
+    display: block;
+    margin: 0 auto;
+}
+.hire-message{
+    margin-bottom: 50px;
+}
+.more-info-description{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.more-info-description a{
+    text-decoration: none;
+    color: #ea4c89;
+}
+.more-info-description{
+    margin-bottom: 20px;
+}
+.more-info-images div{
+    overflow: hidden;
+    position: relative;
+}
+.more-info-overlay{
+   position: absolute;
+   bottom: 100px;
+   left: 0;
+   height: 100px;
+   background: #bdc3c7;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   width: 500px;
+   display: flex;
+ 
+}
+.more-info-overlay span{
+    color: white;
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.overlay-buttons{
+    margin-top: 40px;
+    margin-left: 25px;
+}
+.overlay-buttons button{
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    border: 1px solid rgba(170, 164, 164, 0.719);
+}
+.footer-container{
+    height: fit-content;
+    width: 100% !important;
+    margin-top: 70px;
+    border-top: 1px solid rgba(197, 194, 194, 0.747);
+    padding: 40px 0;
+}
+.footer{
+    height: 100%;
+    width: 80%;
+    margin-left:5% ;
+}
+.social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50%;
+}
+.footer ul{
+    list-style: none;
+}
+.footer li{
+    margin-bottom: 10px;
+}
+.footer .logo{
+    color: #ea4c89;
+    font-weight: 600;
+    font-size: 40px;
+}
+.footer ul li:first-of-type{
+    line-height: 40px;
+}
+.floating-buttons{
+    position: fixed;
+    top: 110px;
+    right: 25px;
+}
+.floating-buttons ul{
+    list-style: none;
+}
+.floating-buttons ul li{
+    color: rgb(61, 58, 58);
+    height: 45px;
+    width: 40px;
+    padding: 10px;
+    border: 1px solid rgba(202, 199, 199, 0.76);
+    margin-bottom: 10px;
+    border-radius: 12px;
+    margin-left: 8px;
+}
+.floating-buttons img{
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    
+}
